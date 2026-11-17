@@ -1,7 +1,7 @@
 # proyecto-eya-haziel-ruben-sofia
 # Guía de Trabajo Interna – Proyecto Integrador
 **Proyecto:** Sistema de Gestión de Inventario de Tienda  
-**Equipo:** Sofía, Rubén y Haziel  
+**Equipo:** Sofía Altamirano, Rubén Carretero y Haziel Larios  
 **Materia:** Estructuras de Datos y Algoritmos Avanzados (Prof. MSC Josimar Reyes Campos)
 
 > **Propósito de este documento:** Este `README.md` es nuestro mapa de ruta oficial. Aquí están las reglas de código, los comandos exactos de Git para no pisarnos el trabajo y el paso a paso de lo que cada quien debe construir en cada sesión.
