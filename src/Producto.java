@@ -13,7 +13,7 @@ public class Producto {
         this.stock = stock;
     }
 
-    public void actuzalizarStock(int cantidad){
+    public void actualizarStock(int cantidad){
         if (this.stock + cantidad>= 0) {
             this.stock += cantidad;
         }
