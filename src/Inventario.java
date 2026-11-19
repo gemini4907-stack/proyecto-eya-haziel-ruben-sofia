@@ -14,7 +14,6 @@ public class Inventario {
         this.categoriasDisponibles = new HashSet<>();
     }
 
-
     public boolean registrarProducto(Producto p) {
         if (p == null || p.getCodigo() == null || p.getCodigo().trim().isEmpty()) {
             return false;
@@ -29,14 +28,12 @@ public class Inventario {
         return true;
     }
 
-
     public Producto buscarPorCodigo(String codigo) {
         if (codigo == null) {
             return null;
         }
         return productosPorCodigo.get(codigo.trim().toUpperCase());
     }
-
 
     public Producto eliminarProducto(String codigo) {
         if (codigo == null) {
@@ -49,16 +46,14 @@ public class Inventario {
         return eliminado;
     }
 
-
     public boolean modificarStock(String codigo, int delta) {
         Producto p = buscarPorCodigo(codigo);
         if (p == null || (p.getStock() + delta < 0)) {
             return false;
         }
-        p.actuzalizarStock(delta);
+        p.actualizarStock(delta);
         return true;
     }
-
 
     private void reconstruirCategorias() {
         categoriasDisponibles.clear();
@@ -69,11 +64,9 @@ public class Inventario {
         }
     }
 
-
     public Set<String> obtenerTodasLasCategorias() {
         return new HashSet<>(categoriasDisponibles);
     }
-
 
     public List<Producto> obtenerListaProductos() {
         return new ArrayList<>(productosPorCodigo.values());
